@@ -8,62 +8,62 @@ public class TestCalculator {
 
     double num3 = 16.0;
     double num4 = 8.0;
+
     System.out.println("Welcome to Calculator!");
     Scanner input = new Scanner(System.in);
     System.out.println("Enter the following the this format (data type operandSign num1 num2): ");
     String dataType = input.nextLine();
     String operator = input.nextLine();
-    String value1 = input.nextLine();
-    String value2 = input.nextLine();
     input.close();
     Calculator calculator = new Calculator();
     // Code block that handles doubles
 
  if (dataType.equals(" double ")) 
     {
-        value1 = input.nextDouble();
-        value2 = input.nextDouble();
+        double value1 = input.nextDouble();
+        double value2 = input.nextDouble();
         double result;
 
- if (operator . equals ( " + " ) )
- result = calculator.addIntegers(value1,value2);
+ if (operator.equals ( " + "))
+        result = calculator.addIntegers(value1,value2);
 
  else if (operator.equals (" - "))
- result = calculator.subtractInt(value1 ,value2);
+        result = calculator.subtractInt(value1 ,value2);
 
  else if (operator.equals(" * "))
- result = calculator.multiply(value1,value2);
+        result = calculator.multiply(value1,value2);
 
  else if (operator.equals(" / "))
- result = calculator.divideInt(value1,value2);
+        result = calculator.divideInt(value1,value2);
 
  else {
- System.err.println(" Invalid operator . ");
- return;
- }
- System.out.println(result);
+        System.err.println(" Invalid operator . ");
+        return;
+    }
+        System.out.println(result);
  }
  // Code block that deals with integers
  else if (dataType.equals(" integer " )){
-
- value1 = input.nextInt();
- value2 = input.nextInt();
- int result;
+        int value1 = input.nextInt();
+        int value2 = input.nextInt();
+        int result;
 
  if (operator.equals( " + " ))
- result = calculator.addIntegers(value1,value2);
+        result = calculator.addIntegers(value1,value2);
 
  else if (operator.equals(" -"))
- result = calculator . subtractInt ( value1 , value2 ) ;
+        result = calculator.subtractInt(value1,value2 ) ;
 
  else if (operator.equals(" * "))
- result = calculator . multiply ( value1 , value2 ) ;
+        result = calculator.multiply(value1,value2);
+
  else if (operator.equals(" / "))
- result = calculator.divideInt(value1,value2);
+        result = calculator.divideInt(value1,value2);
+
  else {
- System.err.println(" Invalid operator . ");
- return;
- }
+        System.err.println(" Invalid operator . ");
+        return;
+    }
  System.out.println(result);
  }
  // Code block to deal with a non - valid data type input
