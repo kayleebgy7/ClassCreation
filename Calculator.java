@@ -5,9 +5,6 @@ public class Calculator {
         return num1 + num2;
     }
 
-
-
-
     public int subtractInt(int num1, int num2) {
         return num1 - num2;
     }
@@ -47,16 +44,9 @@ public class Calculator {
         return num3 * num4;
     }
 
-
-
-
     public double divideInt(double num3, double num4) {
         return num3 / num4;
     }
        
    
 }
-
-
-
-
