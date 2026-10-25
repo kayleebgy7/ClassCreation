@@ -26,26 +26,26 @@ public class Calculator {
 
 
 
-    public double addIntegers(double num3, double num4) {
-        return num3 + num4;
+    public double addIntegers(double num1, double num2) {
+        return num1 + num2;
     }
 
 
 
 
-    public double subtractInt(double num3, double num4) {
-        return num3 - num4;
+    public double subtractInt(double num1, double num2) {
+        return num1 - num2;
     }
 
 
 
 
-    public double multiply(double num3, double num4) {
-        return num3 * num4;
+    public double multiply(double num1, double num2) {
+        return num1 * num2;
     }
 
-    public double divideInt(double num3, double num4) {
-        return num3 / num4;
+    public double divideInt(double num1, double num2) {
+        return num1 / num2;
     }
        
    
