@@ -4,28 +4,28 @@ public class TestCalculator {
     public static void main(String[] args) {
    
     System.out.println("Welcome to Calculator!");
+    Calculator cal = new Calculator();
+//     int valueInt = 15;
+//     int valueInt2 = 3;
 
-    int valueInt = 15;
-    int valueInt2 = 3;
+//     double valueDouble = 15.0;
+//     double valueDouble2 = 3.0;
+   
+//     System.out.println(valueInt + "+" + valueInt2 + "=" + cal.add(valueInt,valueInt2));
 
-    double valueDouble = 15.0;
-    double valueDouble2 = 3.0;
-       Calculator cal = new Calculator();
-    System.out.println(valueInt + "+" + valueInt2 + "=" + cal.add(valueInt,valueInt2));
+//     System.out.println(valueInt + "-" + valueInt2 + "=" + cal.subtract(valueInt,valueInt2));
 
-    System.out.println(valueInt + "-" + valueInt2 + "=" + cal.subtract(valueInt,valueInt2));
+//     System.out.println(valueInt + "*" + valueInt2 + "=" + cal.multiply(valueInt,valueInt2));
 
-    System.out.println(valueInt + "*" + valueInt2 + "=" + cal.multiply(valueInt,valueInt2));
+//     System.out.println(valueInt + "/" + valueInt2 + "=" + cal.divide(valueInt, valueInt2));
 
-    System.out.println(valueInt + "/" + valueInt2 + "=" + cal.divide(valueInt, valueInt2));
+//     System.out.println(valueDouble + "+" + valueDouble2 + "=" + cal.add(valueDouble, valueDouble2));
 
-    System.out.println(valueDouble + "+" + valueDouble2 + "=" + cal.add(valueDouble, valueDouble2));
+//     System.out.println(valueDouble + "-" + valueDouble2 + "=" + cal.subtract(valueDouble, valueDouble2));
 
-    System.out.println(valueDouble + "-" + valueDouble2 + "=" + cal.subtract(valueDouble, valueDouble2));
+//     System.out.println(valueDouble + "*" + valueDouble2 + "=" + cal.multiply(valueDouble, valueDouble2));
 
-    System.out.println(valueDouble + "*" + valueDouble2 + "=" + cal.multiply(valueDouble, valueDouble2));
-
-    System.out.println(valueDouble + "/" + valueDouble2 + "=" + cal.divide(valueDouble, valueDouble2));
+//     System.out.println(valueDouble + "/" + valueDouble2 + "=" + cal.divide(valueDouble, valueDouble2));
 
 
 //     Calculator calculator = new Calculator();
@@ -42,9 +42,9 @@ public class TestCalculator {
     Scanner input = new Scanner(System.in);
     System.out.println("Enter the following the this format (data type operandSign num1 num2): ");
     String dataType = input.next();
-    String operator = input.next();       
+    String operator = input.next();      
        
- if (dataType.equals("double")) 
+ if (dataType.equals("double"))
     {
        double num1 = input.nextDouble();
        double num2 = input.nextDouble();
@@ -74,7 +74,7 @@ public class TestCalculator {
         int num1 = input.nextInt();
         int num2 = input.nextInt();
         //result stored in this object
-        int result;
+        double result;
 //used if the operator sign is for addition
  if (operator.equals("+"))
         result = cal.add(num1,num2);
@@ -91,7 +91,6 @@ public class TestCalculator {
  else {
         System.err.println("Invalid operator.");
         return;
-
     }
 //formating for answers to be printed out as a full equation
  System.out.println(num1 + " "+ operator + " " + num2 + " = " + result);
@@ -104,5 +103,5 @@ public class TestCalculator {
 input.close();
 
     }
-    
+   
 }
